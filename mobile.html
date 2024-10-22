@@ -11,13 +11,43 @@
 				padding:0;
 			}
 			#main{
-				position: relative;				
-				width: 640px;
-				height: 1008px;							
-				overflow: hidden;
+				<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>移动端尺寸建议</title>
+		<style>
+			html,body{
+				width:100%;
+				height:100%;
+				margin:0;
+				padding:0;
+			}
+			#main{
+				position: relative;								
+				min-width: 640px;
+				max-height: 1008px;	
+				width: fit-content;
+				height: 100vh;	
 				margin:0 auto;
 				background-color:#CCC;
-				text-align:center;							
+				text-align:center;								
+			}
+			#main h1{
+				margin:0;
+				padding:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="main">
+			<h1>移动端布局尺寸建议</h1>
+			<p>设计稿宽640px，高1008px</p>
+		    <p>水平居中</p>	
+		    <a href="index.html">PC端布局建议</a>
+		</div>
+	</body>
+</html>							
 			}
 			#main h1{
 				margin:0;
